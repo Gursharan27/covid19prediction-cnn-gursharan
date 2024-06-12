@@ -23,7 +23,7 @@ uploaded_file = st.sidebar.file_uploader("Choose an X-ray image...", type="jpg")
 # Load your model
 @st.cache(allow_output_mutation=True)
 def load_cnn_model():
-    model = load_model('model.keras')  # Provide the path to your model file
+    model = load_model('"C:/Users/Gursharan Kaur/my_dir/model.zip"')  # Provide the path to your model file
     return model
 
 model = load_cnn_model()
